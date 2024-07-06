@@ -1,0 +1,2998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-CharityAV</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./logo.png" type="image/svg+xml">
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/home.css">
+  <link rel="stylesheet" href="./assets/css/chatbox.css">
+  
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,300&family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+  <div id="header-space"></div>
+
+  <header class="header" data-header>
+
+    <div class="top-bar">
+      <div class="container">
+        <p>Mua sắm thủ công - Ủng hộ từ thiện</p>
+      </div>
+    </div>
+
+    <div class="nav-wrapper">
+      <div class="container">
+
+        <h1 class="h1">
+          <a href="./index.html" class="logo"><img src="./logo.png"  width="100" height="100"></a>
+        </h1>
+
+        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <nav class="navbar" data-navbar>
+
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <ul class="navbar-list" >
+
+            <li>
+              <a href="./index.html" class="navbar-link">Trang chủ</a>
+            </li>
+
+            <li>
+              
+              <a href="./about.html"  class="navbar-link">Giới thiệu</a>
+            </li>
+
+            <li>
+              <button class="navbar-link" onclick="Telesanpham()">Sản phẩm</button>
+            </li>
+
+            <li>
+              <button class="navbar-link" onclick="Telebaiviet()">Bài viết</button>
+            </li>
+
+            <li>
+              <button class="navbar-link" onclick="Telexuhuong()">Xu hướng</button>
+            </li>
+
+            <li>
+              <button class="navbar-link" onclick="Telelienhe()">Liên hệ</button>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <div class="header-action">
+
+          <div class="search-wrapper" data-search-wrapper>
+
+            <button class="header-action-btn" aria-label="Toggle search" data-search-btn>
+              <ion-icon name="search-outline" class="search-icon"></ion-icon>
+              <ion-icon name="close-outline" class="close-icon"></ion-icon>
+            </button>
+
+            <div class="input-wrapper">
+              <input type="search" name="search" placeholder="Tìm..." class="search-input">
+
+              <button class="search-submit" aria-label="Submit search">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </div>
+
+          </div>
+
+          <button class="header-action-btn" onclick="redirectToPage()">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+          <button class="header-action-btn" aria-label="Open whishlist" data-panel-btn="whishlist">
+            <ion-icon name="heart-outline"></ion-icon>
+
+            <data class="btn-badge" value="3">03</data>
+          </button>
+
+          <button class="header-action-btn" aria-label="Open shopping cart" data-panel-btn="cart">
+            <ion-icon name="basket-outline"></ion-icon>
+
+            <data class="btn-badge" value="2">02</data>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #ASIDE
+  -->
+
+  <aside class="aside">
+
+    <div class="side-panel" data-side-panel="whishlist">
+
+      <button class="panel-close-btn" aria-label="Close whishlist" data-panel-btn="whishlist">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <ul class="panel-list">
+
+        <li class="panel-item padding">
+          <a href="./product-details.html" class="panel-card">
+
+            <figure class="item-banner ">
+              <img src="./assets/images/product-c1.png" width="60" height="60" loading="lazy"
+                alt="Combo 3 chú voi gỗ thông">
+            </figure>
+
+            <div>
+              <p class="item-title ">Combo 3 chú voi gỗ thông</p>
+
+              <span class="item-value">300.000đ x1</span>
+            </div>
+
+            <button class="item-close-btn" aria-label="Remove item">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </a>
+        </li>
+
+        <li class="panel-item">
+          <a href="./product-details.html" class="panel-card">
+
+            <figure class="item-banner">
+              <img src="./assets/images/product-c2.png" width="60" height="60" loading="lazy" alt="Bảng gỗ treo hình chữ Z">
+            </figure>
+
+            <div>
+              <p class="item-title">Bảng gỗ treo hình chữ Z</p>
+
+              <span class="item-value">300.000đ x2</span>
+            </div>
+
+            <button class="item-close-btn" aria-label="Remove item">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </a>
+        </li>
+
+        <li class="panel-item">
+          <a href="./product-details.html" class="panel-card">
+
+            <figure class="item-banner">
+              <img src="./assets/images/product-c4.png" width="80" height="80" loading="lazy"
+                alt="Mô hình cá gỗ đã trang trí - M8">
+            </figure>
+
+            <div>
+              <p class="item-title">Mô hình cá gỗ đã trang trí - M8</p>
+
+              <span class="item-value">300.000đ x1</span>
+            </div>
+
+            <button class="item-close-btn" aria-label="Remove item">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="subtotal">
+        <p class="subtotal-text">Tổng:</p>
+
+        <data class="subtotal-value" value="1.200.000đ">1.200.000đ</data>
+      </div>
+
+      <a href="./whishlist.html" class="panel-btn">Danh sách yêu thích</a>
+
+    </div>
+
+    <div class="side-panel" data-side-panel="cart">
+
+      <button class="panel-close-btn" aria-label="Close cart" data-panel-btn="cart">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <ul class="panel-list padding">
+
+        <li class="panel-item">
+          <a href="./product-details.html" class="panel-card">
+
+            <figure class="item-banner">
+              <img src="./assets/images/product-c1.png" width="60" height="60" loading="lazy"
+                alt="Combo 3 chú voi gỗ thông">
+            </figure>
+
+            <div>
+              <p class="item-title">Combo 3 chú voi gỗ thông</p>
+
+              <span class="item-value">300.000đ x1</span>
+            </div>
+
+            <button class="item-close-btn" aria-label="Remove item">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </a>
+        </li>
+
+        <li class="panel-item">
+          <a href="./product-details.html" class="panel-card">
+
+            <figure class="item-banner">
+              <img src="./assets/images/product-c2.png" width="60" height="60" loading="lazy" alt="Bảng gỗ treo hình chữ Z">
+            </figure>
+
+            <div>
+              <p class="item-title">Bảng gỗ treo hình chữ Z</p>
+
+              <span class="item-value">300.000đ x2</span>
+            </div>
+
+            <button class="item-close-btn" aria-label="Remove item">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="subtotal">
+        <p class="subtotal-text">Tổng:</p>
+
+        <data class="subtotal-value" value="">900.000đ</data>
+      </div>
+
+      <a href="./cart.html" class="panel-btn">Xem giỏ hàng</a>
+
+    </div>
+
+  </aside>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero">
+        <div class="container">
+          
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Chiến dịch gây quỹ mới.</p>
+
+            <h2 class="h1 hero-title">
+              Mua sắm <br><span class="span">đồ thủ công</span> <br>
+              Lan tỏa yêu thương <span class="span">và ủng hộ từ thiện.</span>
+            </h2>
+
+            <p class="hero-text">
+              Gây quỹ cho từ thiện bằng cách mua sắm sản phẩm thủ công chất lượng.
+            </p>
+
+            <a  class="btn btn-primary" onclick="Telesanpham()">
+              <span class="span" >Xem ngay</span>
+
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/tuicoi.png" width="603" height="634" loading="lazy" alt="Vegetables"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service">
+        <div class="container">
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="item-icon">
+                <img src="./assets/images/service-icon-1.png" width="40" height="40" loading="lazy" alt="Truck icon">
+              </div>
+
+              <h3 class="h3 item-title">Giao hàng nhanh</h3>
+            </li>
+
+            <li class="service-item">
+              <div class="item-icon">
+                <img src="./assets/images/service-icon-2.png" width="40" height="40" loading="lazy"
+                  alt="Payment card icon">
+              </div>
+
+              <h3 class="h3 item-title">Thanh toán an toàn</h3>
+            </li>
+
+            <li class="service-item">
+              <div class="item-icon">
+                <img src="./assets/images/service-icon-3.png" width="40" height="40" loading="lazy" alt="Helpline icon">
+              </div>
+
+              <h3 class="h3 item-title">Hỗ trợ tận tình</h3>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #OFFERS
+      -->
+
+      <section class="section offers">
+        <div class="container">
+
+          <ul class="offers-list has-scrollbar">
+
+            <li class="offers-item">
+              <a href="./shop.html" class="offers-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/hoagiay.png" width="292" height="230" loading="lazy"
+                    alt="Fresh vegetables package" class="w-100">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Sản phẩm theo chủ đề</p>
+
+                  <h3 class="h3 card-title">Tết đến xuân sang.<br></h3>
+
+                  <div class="btn btn-primary">Xem ngay</div>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="offers-item">
+              <a href="./shop.html" class="offers-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/giangsinh.png" width="336" height="244" loading="lazy"
+                    alt="Healthy & fresh beef" class="w-100">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Sản phẩm theo chủ đề</p>
+
+                  <h3 class="h3 card-title">Giáng sinh an lành.</h3>
+
+                  <div class="btn btn-primary">Xem ngay</div>
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PRODUCT
+      -->
+
+      <section id="Sanpham" class="section product">
+        <div class="container">
+
+          <p class="section-subtitle"> -- Danh Mục Sản Phẩm --</p>
+
+          <h2 class="h2 section-title">Danh sách sản phẩm nổi bật</h2>
+
+          <ul class="filter-list">
+
+            <li>
+              <button id="button1" class="filter-btn active">
+                <p class="filter-text">SCRAPBOOK, SỔ TAY</p>
+              </button>
+            </li>
+
+            <li>
+              <button id="button2" class="filter-btn ">
+                
+                <p class="filter-text">MÔ HÌNH GIẤY</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="filter-btn">
+                <p class="filter-text">HỘP QUÀ, TÚI GIẤY</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="filter-btn">
+                <p class="filter-text">GỖ, PHỤ LIỆU GỖ</p>
+              </button>
+            </li>
+
+          </ul>
+
+          <ul id="list1" class="grid-list ">
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-1.png" width="189" height="189" loading="lazy" alt="Fresh Orangey">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Scrapbook "Let New Advantures Begin"</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">500.000đ</del>
+
+                  <data class="price" value="300.000đ">400.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-2.png" width="189" height="189" loading="lazy" alt="key Lime">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Scrapbook "You make me smile"</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">500.000đ</del>
+
+                  <data class="price" value="300.000đ">400.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-3.png" width="189" height="189" loading="lazy"
+                    alt="Fresh Watermelon">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Mini Album Có Hộp 12*8cm</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">150.000đ</del>
+
+                  <data class="price" value="300.000đ">115.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-4.png" width="189" height="189" loading="lazy" alt="Visual matches">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Mini Album 12*8cm (Album bỏ túi) - Mẫu 1</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">350.000đ</del>
+
+                  <data class="price" value="300.000đ">300.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-5.png" width="189" height="189" loading="lazy"
+                    alt="Pomagranate Fruit">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Mini Album 12*8cm (Album bỏ túi) - Mẫu 3</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">350.000đ</del>
+
+                  <data class="price" value="300.000đ">300.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-6.png" width="189" height="189" loading="lazy" alt="Red onion">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Mini Album 12*8cm (Album bỏ túi) - Mẫu 2</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">350.000đ</del>
+
+                  <data class="price" value="300.000đ">300.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-7.png" width="189" height="189" loading="lazy"
+                    alt="Lens Results Broccoli">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Album mini để bàn mẫu 1</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">350.000đ</del>
+
+                  <data class="price" value="300.000đ">300.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-8.png" width="189" height="189" loading="lazy"
+                    alt="Lens Results Spinach">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Album mini để bàn mẫu 2</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">350.000đ</del>
+
+                  <data class="price" value="300.000đ">300.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+          </ul>
+
+
+
+        
+
+          <ul id="list2" class="grid-list hidden">
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-a1.png" width="189" height="189" loading="lazy" alt="ABC">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Hộp "Hệ Mặt Trời Nhiều Lớp"</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">600.000đ</del>
+
+                  <data class="price" value="300.000đ">500.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-a2.png" width="189" height="189" loading="lazy" alt="key Lime">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Hộp "Đại Dương Nhiều Lớp"</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">350.000đ</del>
+
+                  <data class="price" value="300.000đ">300.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-a3.png" width="189" height="189" loading="lazy"
+                    alt="Fresh Watermelon">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Hộp "Khủng Long Nhiều Lớp"</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">400.000đ</del>
+
+                  <data class="price" value="300.000đ">350.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-a4.png" width="189" height="189" loading="lazy" alt="Visual matches">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Nhà thờ mái phủ tuyết 2.8x3.2x4.1cm</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">330.000đ</del>
+
+                  <data class="price" value="300.000đ">300.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-a5.png" width="189" height="189" loading="lazy"
+                    alt="Pomagranate Fruit">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Mô hình cá gỗ đã trang trí - M6</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">250.000đ</del>
+
+                  <data class="price" value="300.000đ">200.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-a6.png" width="189" height="189" loading="lazy" alt="Red onion">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Thỏ Phục sinh treo bằng gỗ</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">340.000đ</del>
+
+                  <data class="price" value="300.000đ">310.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-a7.png" width="189" height="189" loading="lazy"
+                    alt="Lens Results Broccoli">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Bộ trứng Phục sinh gỗ nổi mẫu 1</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">150.000đ</del>
+
+                  <data class="price" value="300.000đ">140.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-a8.png" width="189" height="189" loading="lazy"
+                    alt="Lens Results Spinach">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Bộ trứng Phục sinh gỗ nổi mẫu 2</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">200.000đ</del>
+
+                  <data class="price" value="300.000đ">180.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+          </ul>
+
+
+
+
+          <ul id="list3" class="grid-list hidden">
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-b1.png" width="189" height="189" loading="lazy" alt="ABC">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Hộp Quà To Gói Sẵn Phong Cách Giáng Sinh</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">600.000đ</del>
+
+                  <data class="price" value="300.000đ">500.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-b2.png" width="189" height="189" loading="lazy" alt="key Lime">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Hộp quà gói sẵn phong cách Giáng sinh</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">350.000đ</del>
+
+                  <data class="price" value="300.000đ">300.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-b3.png" width="189" height="189" loading="lazy"
+                    alt="Fresh Watermelon">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Set 2 Hộp Quà To Gói Sẵn Phong Cách Giáng Sinh</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">400.000đ</del>
+
+                  <data class="price" value="300.000đ">350.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-b4.png" width="189" height="189" loading="lazy" alt="Visual matches">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Hộp Giấy Phong Thư (20*16*7cm)</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">330.000đ</del>
+
+                  <data class="price" value="300.000đ">300.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-b5.png" width="189" height="189" loading="lazy"
+                    alt="Pomagranate Fruit">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Hộp quà vương niệm đựng kẹo, bánh</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">250.000đ</del>
+
+                  <data class="price" value="300.000đ">200.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-b6.png" width="189" height="189" loading="lazy" alt="Red onion">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Hộp quà gói sẵn giấy gân sần - Mẫu 1</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">340.000đ</del>
+
+                  <data class="price" value="300.000đ">310.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-b7.png" width="189" height="189" loading="lazy"
+                    alt="Lens Results Broccoli">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Hộp quà gói sẵn giấy gân sần - Mẫu 2</a>
+                </h3> 
+
+                <div class="price-wrapper">
+                  <del class="del">150.000đ</del>
+
+                  <data class="price" value="300.000đ">140.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-b8.png" width="189" height="189" loading="lazy"
+                    alt="Lens Results Spinach">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Hộp quà đúc hình tim màu trơn đỏ</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">200.000đ</del>
+
+                  <data class="price" value="300.000đ">180.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+          </ul>
+
+
+
+
+          <ul id="list4" class="grid-list hidden">
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c1.png" width="189" height="189" loading="lazy" alt="ABC">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Combo 3 chú voi gỗ thông</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">600.000đ</del>
+
+                  <data class="price" value="300.000đ">500.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c2.png" width="189" height="189" loading="lazy" alt="key Lime">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Bảng gỗ treo hình chữ Z </a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">350.000đ</del>
+
+                  <data class="price" value="300.000đ">300.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c3.png" width="189" height="189" loading="lazy"
+                    alt="Fresh Watermelon">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Dây Treo Cá Gỗ M11</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">400.000đ</del>
+
+                  <data class="price" value="300.000đ">350.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c4.png" width="189" height="189" loading="lazy" alt="Visual matches">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Mô hình cá gỗ đã trang trí - M8</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">330.000đ</del>
+
+                  <data class="price" value="300.000đ">300.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c5.png" width="189" height="189" loading="lazy"
+                    alt="Pomagranate Fruit">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Lồng chim gỗ mẫu 3</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">250.000đ</del>
+
+                  <data class="price" value="300.000đ">200.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c6.png" width="189" height="189" loading="lazy" alt="Red onion">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Trống gỗ lắc tay</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">340.000đ</del>
+
+                  <data class="price" value="300.000đ">310.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c7.png" width="189" height="189" loading="lazy"
+                    alt="Lens Results Broccoli">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Kẹp gỗ gấu trúc</a>
+                </h3> 
+
+                <div class="price-wrapper">
+                  <del class="del">150.000đ</del>
+
+                  <data class="price" value="300.000đ">140.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card cungco">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c8.png" width="189" height="189" loading="lazy"
+                    alt="Lens Results Spinach">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">
+                  <a href="./product-details.html">Thanh gỗ đan chỉ trái tim 2 màu</a>
+                </h3>
+
+                <div class="price-wrapper">
+                  <del class="del">200.000đ</del>
+
+                  <data class="price" value="300.000đ">180.000đ</data>
+                </div>
+
+                <button class="btn btn-primary them">Thêm vào giỏ hàng</button>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      
+
+
+
+
+
+      <!-- 
+        - #TOP PRODUCT
+      -->
+
+      <section id="Xuhuong" class="section top-product">
+        <div class="container">
+
+          <p class="section-subtitle"> -- Sản Phẩm Xu Hướng --</p>
+
+          <h2 class="h2 section-title">Sản phẩm có nhiều lượt mua nhất</h2>
+
+          <ul class="top-product-list grid-list-2 ">
+
+            <li class="top-product-item">
+              <div class="product-card top-product-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c1.png" width="100" height="100" loading="lazy"
+                    alt="Fresh Orangey">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">
+                    <a href="./product-details.html">Combo 3 chú voi gỗ thông</a>
+                  </h3>
+
+                  <div class="price-wrapper">
+                    <del class="del">350.000đ</del>
+
+                    <data class="price" value="300.000đ">300.000đ</data>
+                  </div>
+
+                  <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="top-product-item">
+              <div class="product-card top-product-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c2.png" width="100" height="100" loading="lazy" alt="key Lime">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">
+                    <a href="./product-details.html">Bảng gỗ treo hình chữ Z</a>
+                  </h3>
+
+                  <div class="price-wrapper">
+                    <del class="del">350.000đ</del>
+
+                    <data class="price" value="300.000đ">300.000đ</data>
+                  </div>
+
+                  <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="top-product-item">
+              <div class="product-card top-product-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c3.png" width="100" height="100" loading="lazy"
+                    alt="Fresh Watermelon">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">
+                    <a href="./product-details.html">Dây Treo Cá Gỗ M11</a>
+                  </h3>
+
+                  <div class="price-wrapper">
+                    <del class="del">350.000đ</del>
+
+                    <data class="price" value="300.000đ">300.000đ</data>
+                  </div>
+
+                  <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="top-product-item">
+              <div class="product-card top-product-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c4.png" width="100" height="100" loading="lazy" alt="Stobery">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">
+                    <a href="./product-details.html">Mô hình cá gỗ đã trang trí - M8</a>
+                  </h3>
+
+                  <div class="price-wrapper">
+                    <del class="del">350.000đ</del>
+
+                    <data class="price" value="300.000đ">300.000đ</data>
+                  </div>
+
+                  <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="top-product-item">
+              <div class="product-card top-product-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c5.png" width="100" height="100" loading="lazy"
+                    alt="Pomagranate Fruit">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">
+                    <a href="./product-details.html">Lồng chim gỗ mẫu 3</a>
+                  </h3>
+
+                  <div class="price-wrapper">
+                    <del class="del">350.000đ</del>
+
+                    <data class="price" value="300.000đ">300.000đ</data>
+                  </div>
+
+                  <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="top-product-item">
+              <div class="product-card top-product-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c6.png" width="100" height="100" loading="lazy"
+                    alt="Lens Results Broccoli">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">
+                    <a href="./product-details.html">Trống gỗ lắc tay họa tiết</a>
+                  </h3>
+
+                  <div class="price-wrapper">
+                    <del class="del">350.000đ</del>
+
+                    <data class="price" value="300.000đ">300.000đ</data>
+                  </div>
+
+                  <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="top-product-item">
+              <div class="product-card top-product-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c7.png" width="100" height="100" loading="lazy"
+                    alt="Lens Results Spinach">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">
+                    <a href="./product-details.html">Kẹp gỗ gấu trúc</a>
+                  </h3>
+
+                  <div class="price-wrapper">
+                    <del class="del">350.000đ</del>
+
+                    <data class="price" value="300.000đ">300.000đ</data>
+                  </div>
+
+                  <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="top-product-item">
+              <div class="product-card top-product-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-c8.png" width="100" height="100" loading="lazy"
+                    alt="Lorigun Artificial">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">
+                    <a href="./product-details.html">Thanh gỗ đan chỉ trái tim 2 màu</a>
+                  </h3>
+
+                  <div class="price-wrapper">
+                    <del class="del">350.000đ</del>
+
+                    <data class="price" value="300.000đ">300.000đ</data>
+                  </div>
+
+                  <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="top-product-item">
+              <div class="product-card top-product-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-a1.png" width="100" height="100" loading="lazy"
+                    alt="Leaf lettuce">
+
+                  <div class="btn-wrapper">
+                    <button class="product-btn" aria-label="Thêm vào yêu thích">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <div class="tooltip">Thêm vào yêu thích</div>
+                    </button>
+
+                    <button class="product-btn" aria-label="Xem thêm">
+                      <ion-icon name="eye-outline"></ion-icon>
+
+                      <div class="tooltip">Xem thêm</div>
+                    </button>
+                  </div>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <h3 class="h4 card-title">
+                    <a href="./product-details.html">Hộp "Hệ Mặt Trời Nhiều Lớp"</a>
+                  </h3>
+
+                  <div class="price-wrapper">
+                    <del class="del">350.000đ</del>
+
+                    <data class="price" value="300.000đ">300.000đ</data>
+                  </div>
+
+                  <button class="btn btn-primary">Thêm vào giỏ hàng</button>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      
+
+      <section class="section partner">
+        <div class="container">
+
+          <p class="section-subtitle"> -- Đơn Vị Hợp Tác --</p>
+
+          <h2 class="h2 section-title">Các Tổ Chức Từ Thiện</h2>
+
+          <ul class="has-scrollbar ">
+
+            
+
+           
+
+            <li class="partner-item anhuh">
+              <figure class="partner-logo">
+                <img src="./assets/images/partner-3.png" width="132" height="134" loading="lazy" alt="Partner logo">
+              </figure>
+            </li>
+
+            <li class="partner-item anhuh">
+              <figure class="partner-logo">
+                <img src="./assets/images/partner-4.png" width="132" height="134" loading="lazy" alt="Partner logo">
+              </figure>
+            </li>
+
+            <li class="partner-item anhuh">
+              <figure class="partner-logo">
+                <img src="./assets/images/partner-5.png" width="132" height="134" loading="lazy" alt="Partner logo">
+              </figure>
+            </li>
+            <li class="partner-item anhuh">
+              <figure class="partner-logo">
+                <img src="./assets/images/partner-1.png" width="132" height="134" loading="lazy" alt="Partner logo">
+              </figure>
+            </li>
+            <li class="partner-item anhuh">
+              <figure class="partner-logo">
+                <img src="./assets/images/partner-2.png" width="132" height="134" loading="lazy" alt="Partner logo">
+              </figure>
+            </li>
+            <li class="partner-item anhuh">
+              <figure class="partner-logo">
+                <img src="./assets/images/partner-6.png" width="132" height="134" loading="lazy" alt="Partner logo">
+              </figure>
+            </li>
+           
+
+          
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testimonials">
+        <div class="container">
+
+          <p class="section-subtitle"> -- Đôi Lời Cảm Nhận --</p>
+
+          <h2 class="h2 section-title">Phản Hồi Từ Những Khách Hàng</h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="card-header">
+
+                  <img src="./assets/images/quote-left.png" width="25" height="25" aria-hidden="true" alt="">
+
+                  <img src="./assets/images/ava1.jpg" width="90" height="90" loading="lazy"
+                    alt="Willow Peralta" class="card-avatar">
+
+                  <img src="./assets/images/quote-right.png" width="25" height="25" aria-hidden="true" alt="">
+
+                </div>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <blockquote class="card-text">
+                  "Trang web của bạn rất chuyên nghiệp và dễ sử dụng. Giao diện sáng sủa và thân thiện với người dùng.
+Tôi thực sự thích cách bạn hiển thị các sản phẩm thủ công . Hình ảnh sắc nét và mô tả chi tiết giúp tôi dễ dàng chọn mua.
+Trang web của bạn truyền tải một thông điệp mạnh mẽ về sự kết hợp giữa công nghiệp và từ thiện. Tôi thấy mình hài lòng khi mua sắm từ bạn."
+                </blockquote>
+
+                <h3 class="card-title">Nghĩa Trọng TV</h3>
+
+                <p class="card-subtitle">YOUTUBER TỪ THIỆN</p>
+
+              </div>
+            </li>
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="card-header">
+
+                  <img src="./assets/images/quote-left.png" width="25" height="25" aria-hidden="true" alt="">
+
+                  <img src="./assets/images/ava2.jpg" width="90" height="90" loading="lazy"
+                    alt="Pamelia Hamrick" class="card-avatar">
+
+                  <img src="./assets/images/quote-right.png" width="25" height="25" aria-hidden="true" alt="">
+
+                </div>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <blockquote class="card-text">
+                  "Giao diện trang web của bạn thật sự hấp dẫn và thể hiện sự chuyên nghiệp. Tôi dễ dàng tìm thấy thông tin và các sản phẩm mà tôi quan tâm.
+Tôi ấn tượng với chất lượng hình ảnh trên trang web của bạn. Các sản phẩm thủ công được trình bày rất tinh tế và hấp dẫn.
+Trang web của bạn truyền tải một thông điệp ý nghĩa về ủng hộ từ thiện. Đây là một lý do thuyết phục để tôi lựa chọn mua sắm từ bạn."
+                </blockquote>
+
+                <h3 class="card-title">
+                  Hoàng Sanh Official </h3>
+
+                <p class="card-subtitle">YOUTUBER TỪ THIỆN</p>
+
+              </div>
+            </li>
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="card-header">
+
+                  <img src="./assets/images/quote-left.png" width="25" height="25" aria-hidden="true" alt="">
+
+                  <img src="./assets/images/ava3.jpg" width="90" height="90" loading="lazy"
+                    alt="Novella Gerber" class="card-avatar">
+
+                  <img src="./assets/images/quote-right.png" width="25" height="25" aria-hidden="true" alt="">
+
+                </div>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+                <blockquote class="card-text">
+                  "Trang web của bạn có giao diện đẹp và tương thích với các thiết bị di động. Tôi có thể truy cập và mua sắm một cách thuận tiện trên điện thoại di động của mình.
+Tôi yêu thích cách bạn tạo ra trải nghiệm mua sắm trực tuyến tuyệt vời. Việc tìm kiếm sản phẩm và thanh toán đơn giản và nhanh chóng.
+Trang web của bạn thật sự độc đáo và mang đậm dấu ấn của thủ công. Tôi cảm thấy đặc biệt khi tìm thấy những sản phẩm khác thường và độc đáo từ bạn."
+                </blockquote>
+
+                <h3 class="card-title">CÚ ĐẤM THÉP TV </h3>
+
+                <p class="card-subtitle">YOUTUBER TỪ THIỆN</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section id="Baiviet" class="section blog">
+        <div class="container">
+
+          <p class="section-subtitle"> -- Tin Tức và Bài Viết --</p>
+
+          <h2 class="h2 section-title">Bài Viết Nổi Bật</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/baiviet1.png" width="451" height="310" loading="lazy"
+                    alt="“Khai bút đầu năm” – Khai trăm điều mơ ước cùng trẻ khó khăn" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="wrapper-item">
+                      <ion-icon name="calendar-clear-outline"></ion-icon>
+
+                      <time class="text" datetime="10-01-2023">10-01-2023</time>
+                    </div>
+
+                    <div class="wrapper-item">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <span class="text">46389</span>
+                    </div>
+
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="./404.html">“Khai bút đầu năm” – Khai trăm điều mơ ước cùng trẻ khó khăn</a>
+                  </h3>
+
+                  <a href="./404.html" class="btn btn-primary">
+                    <span>Đọc bài viết</span>
+
+                    <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/baiviet2.png" width="451" height="310" loading="lazy"
+                    alt="Một “Ngày Tết quê em” thật ý nghĩa trước thềm năm Quý Mão" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="wrapper-item">
+                      <ion-icon name="calendar-clear-outline"></ion-icon>
+
+                      <time class="text" datetime="2022-04-13">18-01-2023</time>
+                    </div>
+
+                    <div class="wrapper-item">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <span class="text">374238</span>
+                    </div>
+
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="./404.html">Một “Ngày Tết quê em” thật ý nghĩa trước thềm năm Quý Mão</a>
+                  </h3>
+
+                  <a href="./404.html" class="btn btn-primary">
+                    <span>Đọc bài viết</span>
+
+                    <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/baiviet3.png" width="451" height="310" loading="lazy"
+                    alt="Jadestone Energy – Hỗ trợ trẻ em khó khăn trên nhiều phương diện" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="wrapper-item">
+                      <ion-icon name="calendar-clear-outline"></ion-icon>
+
+                      <time class="text" datetime="13-02-2023">13-02-2023</time>
+                    </div>
+
+                    <div class="wrapper-item">
+                      <ion-icon name="heart-outline"></ion-icon>
+
+                      <span class="text">675473</span>
+                    </div>
+
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="./404.html">Jadestone Energy – Hỗ trợ trẻ em khó khăn trên nhiều phương diện</a>
+                  </h3>
+
+                  <a href="./404.html" class="btn btn-primary">
+                    <span>Đọc bài viết</span>
+
+                    <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section  class="section newsletter">
+        <div class="container">
+
+          <div class="newsletter-card">
+
+            <p class="section-subtitle"> -- Đăng ký thư điện tử --</p>
+
+            <h2 class="h2 section-title">Đăng ký thư điện tử để nhận những ưu đãi <span class="uudai"></span></h2>
+
+            <form action="" class="newsletter-form">
+
+              <input type="email" name="email" placeholder="Nhập địa chỉ email" required class="input-email">
+
+              <button type="submit" class="btn btn-primary btn-dangky">
+                <span>Đăng ký</span>
+
+                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer id="Lienhe" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="./index.html" class="logo"><img src="./logo.png"  width="100" height="100"></a>
+
+          <p class="footer-text">
+            Kết nối đam mê thủ công, lan tỏa yêu thương từ thiện.
+            Với những sản phẩm thủ công, chúng ta cùng xây dựng một thế giới tốt đẹp hơn.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-skype"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Tổ Chức</p>
+          </li>
+
+          <li>
+            <a href="./about.html" class="footer-link">Giới thiệu</a>
+          </li>
+
+          <li>
+            <a href="./shop.html" class="footer-link">Sản phẩm</a>
+          </li>
+
+          <li>
+            <a href="./blog.html" class="footer-link">Bài viết</a>
+          </li>
+
+          <li>
+            <a href="./shop.html" class="footer-link">Xu hướng</a>
+          </li>
+
+          <li>
+            <a href="./contact.html" class="footer-link">Liên hệ</a>
+          </li>
+
+          
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Liên hệ</p>
+          </li>
+
+          <li class="footer-item">
+            <div class="contact-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="contact-link footer-text">
+              Ngũ Hành Sơn, Đà Nẵng, Việt Nam
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <div class="contact-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+1800123456789" class="contact-link footer-text">1900 1987</a>
+          </li>
+
+          <li class="footer-item">
+            <div class="contact-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="hotro@cskh.com" class="contact-link footer-text">hotro@cskh.com</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Thư điện tử</p>
+
+          <p class="newsletter-text footer-text ">
+            Bạn sẽ nhận thông tin mới nhất từ chúng tôi
+          </p>
+
+          <form action="" class="footer-form">
+            <input type="email" name="email" placeholder="Địa chỉ Email *" required class="footer-input">
+
+            <button type="submit" class="footer-form-btn" aria-label="Submit">
+              <ion-icon name="mail-outline"></ion-icon>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 6-2023 Bản quyền thuộc về <a href="#" class="copyright-link">ACE TEAMS</a>.
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Điều khoản & Dịch vụ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Chính sách bảo mật</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-to-top" aria-label="Back to Top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+   <!-- 
+    - BOXCHAT
+  -->
+
+  <title>Chatbox</title>
+  <div class="chatbox-wrapper">
+		<div class="chatbox-toggle">
+			<i class='bx bx-message-dots'></i>
+		</div>
+		<div class="chatbox-message-wrapper">
+			<div class="chatbox-message-header">
+				<div class="chatbox-message-profile">
+					<img src="./assets/images/avatar-tuandeptrai.png" alt="" class="chatbox-message-image">
+					<div>
+						<h4 class="chatbox-message-name">Phạm Quang Tuấn</h4>
+						<p class="chatbox-message-status">online</p>
+					</div>
+				</div>
+				<div class="chatbox-message-dropdown">
+					<i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'></i>
+					<ul class="chatbox-message-dropdown-menu">
+						<li>
+							<a href="#">Tìm kiếm</a>
+						</li>
+						<li>
+							<a href="#">Báo cáo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="chatbox-message-content">
+				<h4 class="chatbox-message-no-message">Để lại tin nhắn để tôi có thể hỗ trợ bạn!</h4>
+			
+			</div>
+			<div class="chatbox-message-bottom">
+				<form action="#" class="chatbox-message-form">
+					<textarea rows="1" placeholder="Nhập nội dung..." class="chatbox-message-input" ></textarea>
+					<button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/chatbox.js"></script>
+  <script src="./assets/js/login.js"></script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
